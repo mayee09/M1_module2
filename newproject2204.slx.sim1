@@ -1,0 +1,17 @@
+<circuit type="simulide_1.0" rev="1007" stepSize="1000000" stepsPS="1000000" NLsteps="100000" animate="0" >
+
+<item itemtype="MCU" CircId="mega328-1" mainComp="false" Show_id="true" Show_Val="false" Pos="464,400" rotation="0" hflip="1" vflip="1" label="mega328-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Auto_Load="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" />
+
+<item itemtype="Servo" CircId="Servo-2" mainComp="false" Show_id="true" Show_Val="false" Pos="996,556" rotation="0" hflip="1" vflip="1" label="Servo-2" idLabPos="-16,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" Speed="0.2 _sec/60º" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+09 Ω" />
+
+<item itemtype="Ground" CircId="Ground-4" mainComp="false" Show_id="false" Show_Val="false" Pos="568,468" rotation="0" hflip="1" vflip="1" label="Ground-4" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Voltage Source" CircId="Voltage Source-6" mainComp="false" ShowProp="MaxValue" Show_id="false" Show_Val="true" Pos="872,276" rotation="0" hflip="1" vflip="1" label="Voltage Source-6" idLabPos="-32,-48" labelrot="0" valLabPos="-8,30" valLabRot="0" Value_Volt="0 V" MaxValue="5 V" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="mega328-1-PORTB1" endpinid="Servo-2-in2" pointList="504,512,672,512,672,572,948,572" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="Ground-4-Gnd" endpinid="Servo-2-in1" pointList="568,452,568,424,852,424,852,556,948,556" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="Voltage Source-6-outPin" endpinid="Servo-2-in0" pointList="900,292,904,292,904,540,948,540" />
+
+</circuit>
